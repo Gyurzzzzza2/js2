@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="pol">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title><title></title></title>
+</head>
+<body>
+    <input id="odpowiedz" type="password" maxlength="8" required>
+    <button onclick="sprawdzOdpowiedz()">sprawdz</button>
+    <div id="wynik"></div>
+<script>
+        function sprawdzOdpowiedz(){
+        var odpowiedz = document.getElementById("odpowiedz").value;
+        var wynik;
+        if(odpowiedz.lenght=8)
+        {
+            wynik="confirmed"
+        }
+        else
+        {
+            wynik="error"
+        } 
+
+    document.getElementById("wynik").innerHTML = wynik;}
+    </script>
+    
+    
+    
+    
+</body>
+</html>
